@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgba(18, 59, 18, 80%);;
+    background-image: url(./midia/hacker-security-capa-1536x1025.jpg);
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}   
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    font-size: 60px;
+}
+
+nav {
+    width: 50%;
+    margin-top: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(48, 156, 48);
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -moz-animation: arrow 2s infinite;
+}
+
+@keyframes arrow 
+{
+0% {opacity: 0}    
+40% {opacity: 1}
+80% {opacity: 0}
+100% {opacity: 0}
+}
+
+@-webkit-keyframes arrow 
+{
+    0% {opacity: 0}    
+    40% {opacity: 1}
+    80% {opacity: 0}
+    100% {opacity: 0}
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.content-container {
+    height: 100vh;
+    background-color: #333;
+
+}
+
+.profile-container {
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./midia/81b396c435478071b2f7045eb479b45c.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(3, 3, 3, 70%);
+    background-blend-mode: color-burn;
+}
+
+.profile-content {
+    width: 30%;
+    height: auto;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    background: #fff;
+    padding: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid rgb(48, 156, 48);
+}
+
+.name-text {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.profile-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(48, 156, 48);
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.fab {
+    width: 50px;
+    height: auto;
+    font-size: 50px;
+}
+.fa-html5 {
+    color: #e34f26;
+    transition: 0.5s;
+}
+
+.html-text {
+    display: none;
+}
+
+.fa-html5:hover {
+    transform: scale(1.15);
+}
+
+.fa-html5:hover ~ .html-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-css3-alt:hover {
+    transform: scale(1.15);
+}
+
+.css-text {
+    display: none;
+}
+
+.fa-css3-alt:hover ~ .css-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fa-js-square {
+    color: #f7df1e;
+}
+
+.js-text {
+    display: none;
+}
+
+.fa-js-square:hover {
+    transform: scale(1.15);
+}
+
+.fa-js-square:hover ~ .js-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fa-react {
+    color: #00d8ff;
+}
+
+.react-text {
+    display: none;
+}
+
+.fa-react:hover {
+    transform: scale(1.15);
+}
+
+.fa-react:hover ~ .react-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fa-node-js {
+    color: #6cc24a;
+}
+
+.node-text {
+    display: none;
+}
+
+.fa-node-js:hover {
+    transform: scale(1.15);
+}
+
+.fa-node-js:hover ~ .node-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile-sinopse {
+    width: 430px;
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    font-size: 17px;
+}
+
+.intext-link {
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    font-size: 17px;
+}
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./midia/desktop-wallpaper-high-quality-world-map-digital-world-map.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(3, 3, 3, 75%);
+    background-blend-mode: color-burn;
+}
+
+.project-content {
+    width: 75%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+}
+
+.position-container {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.project-card {
+    width: 700px;
+    height: 200px;
+    background-color: #000;
+    box-shadow: 10px 10px 5px #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    width: 350px;
+    height: auto;
+    position: relative;
+    border-radius: 8px;
+    right: 20px;
+    top: 40px;
+}
+
+.image-reverse {
+    left: 20px;
+}
+
+.project-text {
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./midia/Republic-of-Gamers-laptop-technology-1421927-wallhere.com.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(3, 3, 3, 90%);
+    width: 600px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    padding: 8px;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 21px;
+    opacity: .5;
+    transition: .5s;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background: none;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    border-bottom: 0.5px solid #fff;
+    border-top: 0.5px solid #fff;
+    border-left: none;
+    border-right: none;
+    padding: 4px;
+    transition: .5s;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    background: none;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    border-bottom: 0.5px solid #fff;
+    border-top: 0.5px solid #fff;
+    border-left: none;
+    border-right: none;
+    padding: 4px;
+    transition: .5s;
+}
+
+button {
+    border-radius: 15px;
+    transition: .5s;
+    opacity: .5;
+    height: 50px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 21px;
+}
+
+.form-item:hover {
+    opacity: 1;
+}
+
+.title-form {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
